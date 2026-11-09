@@ -1,0 +1,31 @@
+name: APIs.io Terms of Service
+description: "What each provider's API terms permit and prohibit: caching, redistribution, attribution, governing law, liability and notice periods, quoted from their own pages."
+image: https://apis.io/assets/branding/apisio-social-card.png
+url: https://apis.io
+node: website
+nav_active: api-terms
+
+keywords:
+  - APIs
+  - Search
+  - Discovery
+  - Terms of Service
+  - ODRL
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "scripts"]
+include: [".well-known"]
+
+github_org: api-search
+github_repo: api-terms
+
+collections:
+  terms:
+    output: true
+    permalink: /api-terms/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: terms
+    values:
+      layout: terms
